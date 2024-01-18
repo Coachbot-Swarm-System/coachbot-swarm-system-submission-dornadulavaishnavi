@@ -3,7 +3,7 @@
     {
       "name": "Input Validity Test",
       "setup": "sudo -H pip3 install pytest",
-      "run": "pytest",
+      "run": "git clone https://github.com/Coachbot-Swarm-System/input-validity-test.git | ./input_validity_test_main.py",
       "input": "",
       "output": "",
       "comparison": "exact",
