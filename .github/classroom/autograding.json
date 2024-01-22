@@ -2,8 +2,8 @@
   "tests": [
     {
       "name": "Input Validity Test",
-      "setup": "git clone https://github.com/Coachbot-Swarm-System/input-validity-test.git",
-      "run": "python input_validity_test.py",
+      "setup": "",
+      "run": "python input_test.py",
       "input": "",
       "output": "",
       "comparison": "exact",
