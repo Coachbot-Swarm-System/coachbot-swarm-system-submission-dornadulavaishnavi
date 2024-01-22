@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Input Validity Test",
-      "setup": "",
+      "setup": "pip install numpy",
       "run": "python input_test.py",
       "input": "",
       "output": "",
