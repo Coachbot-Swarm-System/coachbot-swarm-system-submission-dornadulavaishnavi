@@ -3,6 +3,11 @@ import os
 
 async def test_validity():
     print("in testing inputs")
+    # navigate to code queue folder
+    # for each folder in code queue?
+        # load in folder
+        # check validity
+
     return True
 
 # if __name__ == "__main__":
