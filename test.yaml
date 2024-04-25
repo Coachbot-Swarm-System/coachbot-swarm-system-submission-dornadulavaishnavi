@@ -1,0 +1,11 @@
+name: Test
+on:
+  push:
+    branches: main
+
+jobs:
+  test:
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run tests
+      run: npm test
