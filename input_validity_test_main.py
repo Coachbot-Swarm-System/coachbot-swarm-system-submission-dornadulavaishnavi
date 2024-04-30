@@ -4,6 +4,7 @@ import os
 def test_validity():
     print("in testing inputs")
     # navigate to code queue folder
+    input_files = InputFiles("Vaish_Flocking")
     # for each folder in code queue?
         # load in folder
         # check validity
