@@ -10,5 +10,7 @@ async def test_validity():
 
     return True
 
+test_validity()
+
 # if __name__ == "__main__":
 #     asyncio.run(main())
