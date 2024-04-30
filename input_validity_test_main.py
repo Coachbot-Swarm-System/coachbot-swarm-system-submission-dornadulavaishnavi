@@ -1,7 +1,7 @@
 from check_init_pose_validity import InputFiles
 import os
 
-async def test_validity():
+def test_validity():
     print("in testing inputs")
     # navigate to code queue folder
     # for each folder in code queue?
