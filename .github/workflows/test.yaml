@@ -16,9 +16,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install numpy
         pip install pycompile
-    - uses: actions/checkout@v2
     - name: Check validity
-      with:
-        command_line: |
-          'python ./input_validity_test_main.py'
-        expected_result: True
+      run: python ./input_validity_test_main.py
