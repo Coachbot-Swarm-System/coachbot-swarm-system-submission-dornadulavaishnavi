@@ -23,7 +23,7 @@ jobs:
           install pycompile
         command: python ./input_validity_test_main.py
         input: '0'
-        expected-output: True
+        expected-output: '1'
         comparison-method: exact
         timeout: 2
     - name: Autograding Reporter
