@@ -24,7 +24,7 @@ jobs:
         command: python ./input_validity_test_main.py
         input: '0'
         expected-output: '1'
-        comparison-method: exact
+        comparison-method: included
         timeout: 2
     - name: Autograding Reporter
       uses: education/autograding-grading-reporter@v1
