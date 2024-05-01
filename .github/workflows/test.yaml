@@ -1,4 +1,4 @@
-name: Autograding Tests
+name: Testing Input Validity
 'on':
 - push
 - workflow_dispatch
