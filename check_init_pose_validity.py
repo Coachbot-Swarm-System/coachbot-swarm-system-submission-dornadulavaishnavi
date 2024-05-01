@@ -67,6 +67,9 @@ class InputFiles:
         emails_file.close()
         print("Sending Emails to: " + str(emails))
         return emails
+
+    def is_input_valid(self):
+        return self.files_loaded_correctly and self.init_poses_valid
     # -------------------------MAIN FUNCTION -------------------------------
     def check_validity(self, dict_init_pose):
         invalid_flag = True
