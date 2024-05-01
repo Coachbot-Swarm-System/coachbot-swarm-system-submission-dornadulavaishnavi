@@ -18,6 +18,6 @@ jobs:
         pip install pycompile
     - name: Check validity
       with:
-        command_line: |
-          'python ./input_validity_test_main.py'
+        run: |
+          python ./input_validity_test_main.py
         expected_result: True
