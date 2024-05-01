@@ -18,3 +18,4 @@ jobs:
         pip install pycompile
     - name: Check validity
       run: python ./input_validity_test_main.py
+      expected-result: True
