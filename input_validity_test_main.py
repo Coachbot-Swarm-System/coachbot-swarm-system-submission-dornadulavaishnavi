@@ -1,5 +1,6 @@
 from check_init_pose_validity import InputFiles
 import os
+import sys
 
 def test_validity():
     print("in testing inputs")
@@ -10,9 +11,11 @@ def test_validity():
     # assert input_files.is_input_valid() == True, "Input files have an error"
     # return input_files.files_loaded_correctly and input_files.init_poses_valid
     if input_files.files_loaded_correctly and input_files.init_poses_valid:
-        return '1'
+        sys.stdout.write('1')
+        return True
     else:
-        return '0'
+        sys.stdout.write('0')
+        return False
     # for each folder in code queue?
         # load in folder
         # check validity
