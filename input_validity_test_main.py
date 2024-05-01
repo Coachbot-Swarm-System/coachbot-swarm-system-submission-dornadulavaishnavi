@@ -11,8 +11,6 @@ def test_validity():
         # load in folder
         # check validity
 
-    return True
-
 test_validity()
 
 # if __name__ == "__main__":
