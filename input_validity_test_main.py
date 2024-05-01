@@ -8,7 +8,11 @@ def test_validity():
     print("Files Loaded Correctly:", input_files.files_loaded_correctly, "Valid initial positions given", input_files.init_poses_valid)
     print(input_files.files_loaded_correctly and input_files.init_poses_valid)
     # assert input_files.is_input_valid() == True, "Input files have an error"
-    return input_files.files_loaded_correctly and input_files.init_poses_valid
+    # return input_files.files_loaded_correctly and input_files.init_poses_valid
+    if input_files.files_loaded_correctly and input_files.init_poses_valid:
+        return 1
+    else:
+        return 0
     # for each folder in code queue?
         # load in folder
         # check validity
