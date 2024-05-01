@@ -6,6 +6,7 @@ def test_validity():
     # navigate to code queue folder
     input_files = InputFiles("Vaish_Flocking")
     print("Files Loaded Correctly:", input_files.files_loaded_correctly, "Valid initial positions given", input_files.init_poses_valid)
+    print(input_files.files_loaded_correctly and input_files.init_poses_valid)
     return input_files.files_loaded_correctly and input_files.init_poses_valid
     # for each folder in code queue?
         # load in folder
