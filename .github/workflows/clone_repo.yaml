@@ -14,6 +14,6 @@ jobs:
     steps:
     - name: Clone Repo
       uses: actions/clone-github-repo-action@v2
-        with:
-          depth: 1
-          branch: 'main'
+      with:
+        depth: 1
+        branch: 'main'
