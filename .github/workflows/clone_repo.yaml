@@ -17,3 +17,5 @@ jobs:
       with:
         depth: 1
         branch: 'main'
+        owner: 'dornadulavaishnavi'
+        repository: 'clone-github-repo-action'
