@@ -1,7 +1,6 @@
 name: Cloning Repo
 'on':
 - push
-- pull_request
 - workflow_dispatch
 - repository_dispatch
 permissions:
@@ -14,7 +13,7 @@ jobs:
     if: github.actor != 'github-classroom[bot]'
     steps:
     - name: Clone Repo
-      uses: dornadulavaishnavi/clone-github-repo-action@v2
+      uses: Coachbot-Swarm-System/clone-github-repo-action@v2
       with:
         depth: 1
         branch: 'main'
