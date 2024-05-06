@@ -1,4 +1,4 @@
-name: Testing Input Validity
+name: Cloning Repo
 'on':
 - push
 - workflow_dispatch
