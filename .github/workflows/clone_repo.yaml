@@ -13,7 +13,7 @@ jobs:
     if: github.actor != 'github-classroom[bot]'
     steps:
     - name: Clone Repo
-      uses: actions/clone-github-repo-action@v2
+      uses: dornadulavaishnavi/clone-github-repo-action@v2
       with:
         depth: 1
         branch: 'main'
