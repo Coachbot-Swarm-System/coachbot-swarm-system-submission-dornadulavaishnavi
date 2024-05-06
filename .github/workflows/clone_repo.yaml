@@ -1,6 +1,7 @@
 name: Cloning Repo
 'on':
 - push
+- pull_request
 - workflow_dispatch
 - repository_dispatch
 permissions:
@@ -18,4 +19,4 @@ jobs:
         depth: 1
         branch: 'main'
         owner: 'dornadulavaishnavi'
-        repository: 'coachbot-swarm-system-submission-dornadulavaishnavi'
+        repository: 'Coachbot-Swarm-System/coachbot-swarm-system-submission-dornadulavaishnavi'
