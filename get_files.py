@@ -1,7 +1,7 @@
 import shutil
 import os
 
-init_file = open('init_pose.csv')
+init_file = open('init_pose.csv', 'w')
 # shutil.copyfile("/Vaish_Flocking/init_pose.csv", "init_poses.csv")
 with open('Vaish_Flocking/init_pose.csv', 'r') as f:
     init_pose_file = f.read()
