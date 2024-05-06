@@ -1,4 +1,4 @@
-name: Cloning Repo
+name: Copying Required Files
 'on':
 - push
 - workflow_dispatch
@@ -12,10 +12,23 @@ jobs:
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
-    - name: Clone Repo
-      uses: Coachbot-Swarm-System/clone-github-repo-action@v2
+    - name: Checkout code
+      uses: actions/checkout@v4
+    - name: Testing validity
+      id: testing-validity
+      uses: education/autograding-io-grader@v1
       with:
-        depth: 1
-        branch: 'main'
-        owner: 'dornadulavaishnavi'
-        repository: 'Coachbot-Swarm-System/coachbot-swarm-system-submission-dornadulavaishnavi'
+        test-name: Testing validity
+        setup-command: python -m pip install --upgrade pip | pip install shutil | pip
+          install os
+        command: python ./get_files.py
+        input: '0'
+        expected-output: 'Copied'
+        comparison-method: contains
+        timeout: 2
+    - name: Autograding Reporter
+      uses: education/autograding-grading-reporter@v1
+      env:
+        TESTING-VALIDITY_RESULTS: "${{steps.testing-validity.outputs.result}}"
+      with:
+        runners: testing-validity
